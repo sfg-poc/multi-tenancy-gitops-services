@@ -8,7 +8,7 @@ ibm-sfg-prod:
     image:
       repository: cp.icr.io/cp/ibm-sfg/sfg
     # Provide the tag value in double quotes
-      tag: 6.1.0.0
+      tag: 6.1.0.1
       pullPolicy: IfNotPresent
       pullSecret: ibm-entitlement-key
   serviceAccount:
@@ -167,7 +167,7 @@ ibm-sfg-prod:
         #    servicePort: "my-http"
         #    enableHttps: false
   ac:
-    replicaCount: 1
+    replicaCount: 2
     resources:
       limits:
         cpu: 4000m
@@ -177,10 +177,10 @@ ibm-sfg-prod:
         memory: 4Gi
 
     autoscaling:
-      enabled: false
+      enabled: true
       minReplicas: 2
       maxReplicas: 4
-      targetCPUUtilizationPercentage: 60
+      targetCPUUtilizationPercentage: 50
 
     frontendService:
       type: ClusterIP
