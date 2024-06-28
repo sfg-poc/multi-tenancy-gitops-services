@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: db2-pvc
 spec:
-  storageClassName: managed-nfs-storage
+  storageClassName: ocs-storagecluster-cephfs
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce

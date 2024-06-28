@@ -10,9 +10,9 @@
           "image.pullPolicy": "IfNotPresent",
           "workerCount": "1",
           "enableHostIPC": "true",
-          "persistence.storageClass": "managed-nfs-storage",
-          "persistence.workerpv.storageClass": "managed-nfs-storage",
-          "persistence.cachingpv.storageClass": "managed-nfs-storage",
+          "persistence.storageClass": "ocs-storagecluster-cephfs",
+          "persistence.workerpv.storageClass": "ocs-storagecluster-cephfs",
+          "persistence.cachingpv.storageClass": "ocs-storagecluster-cephfs",
           "persistence.size": "50Gi",
           "persistence.workerpv.size": "25Gi",
           "persistence.cachingpv.size": "50Gi"

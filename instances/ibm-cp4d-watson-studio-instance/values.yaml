@@ -8,4 +8,4 @@ ibm-cp4d-watson-studio-instance:
       accept: "true"
       license: Enterprise
     version: 4.0.1
-    storageClass: managed-nfs-storage
+    storageClass: ocs-storagecluster-cephfs

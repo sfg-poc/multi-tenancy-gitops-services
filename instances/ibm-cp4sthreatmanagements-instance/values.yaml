@@ -6,10 +6,10 @@ ibm-cp4sthreatmanagements-instance:
     basicDeploymentConfiguration:
       adminUser: admin
       domain: ''
-      storageClass: managed-nfs-storage
+      storageClass: ocs-storagecluster-cephfs
     extendedDeploymentConfiguration:
       airgapInstall: false
-      backupStorageClass: managed-nfs-storage
+      backupStorageClass: ocs-storagecluster-cephfs
       backupStorageSize: ''
       imagePullPolicy: IfNotPresent
       repository: cp.icr.io/cp/cp4s

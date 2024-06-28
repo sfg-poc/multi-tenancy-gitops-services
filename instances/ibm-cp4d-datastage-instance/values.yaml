@@ -7,4 +7,4 @@ ibm-cpd-ds-instance:
       accept: "true"
       license: Enterprise
     version: "4.0.5"
-    storageClass: managed-nfs-storage
+    storageClass: ocs-storagecluster-cephfs
