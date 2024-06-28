@@ -7,7 +7,7 @@ metadata:
   labels:
     intent: documents
 spec:
-  storageClassName: "ibmc-file-gold"
+  storageClassName: "ocs-storagecluster-cephfs"
   capacity:
     storage: 500Mi
   accessModes:
